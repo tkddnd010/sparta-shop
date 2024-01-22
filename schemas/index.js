@@ -5,7 +5,7 @@ const connect = () => {
   mongoose
     .connect(
       // 빨간색으로 표시된 부분은 대여한 ID, Password, 주소에 맞게끔 수정해주세요!
-      'mongodb+srv://sparta-user:aaaa4321@cluster0.hxr3zx5.mongodb.net/?retryWrites=true&w=majority',
+      process.env.dbUrl,
       {
         dbName: 'node_lv1', // node_lv1 데이터베이스명을 사용합니다.
       }
